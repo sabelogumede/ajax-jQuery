@@ -191,10 +191,25 @@ or are not part of the document at first load */
 
 /* because this targets the parent element only that is there in the begining
  then looking for a "attribute" on the clicked item*/
-    $('#places-container').on('click', '.remove', function(){
-        $(this).parent().remove();
-    });
+    // $('#places-container').on('click', '.remove', function(){
+    //     $(this).parent().remove();
+    // });
 
+// ---------------dom manipulation---- empty()
+
+// change/modify element text
+    // $('#container').text('<strong>Hello World</strong>');
+    $('#container').html('<strong>Hello World</strong>');
+
+// empty text
+    // console.log($('#container').html(''));
+    // $('#container').empty();
+
+// writing and reading 
+    $('#container').attr('new-content', 234);
+
+    console.log($('#container').attr('new-content'));
+    console.log($('#container').html());
 
 
 });
